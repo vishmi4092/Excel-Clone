@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="workbook-name-cont">
+        <img src="https://www.gstatic.com/images/branding/product/1x/sheets_2020q4_48dp.png" alt="" class="sheet-icon">
+        <div class = 'name-menu-cont'>
+            <input type="text" class="workbook-name-input" placeholder="Untitled Sheet">
+            <div class="menu-cont">
+                <div class="file">File</div>
+                <div class="edit">Edit</div>
+                <div class="insert">Insert</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="edit-options-cont ">
+        <span class="material-symbols-outlined copy-btn">
+            content_copy
+        </span>
+
+        <span class="material-symbols-outlined cut-btn">
+            content_cut
+        </span>
+
+        <span class="material-symbols-outlined paste-btn">
+            content_paste
+        </span>
+
+        <span class="material-symbols-outlined bold-btn">
+            format_bold
+        </span>
+
+        <span class="material-symbols-outlined italic-btn">
+            format_italic
+        </span>
+
+        <span class="material-symbols-outlined underline-btn">
+            format_underlined
+        </span>
+
+        <select class="font-select ">
+            <option value="monserat">Monserrat</option>
+            <option value="poppins">Poppins</option>
+        </select>
+
+        
+            
+        <label  for="color-input">
+            <span class="material-symbols-outlined">
+                format_color_text
+            </span>
+            <input type="color" id="color-input" style="display: none">
+        </label>
+
+        <select class="size-select">
+            <option value="10">1</option>
+            <option value="11">2</option>
+            <option value="12">3</option>
+        </select>
+    </div>
+    <hr>
+    <div class="function-cont">
+        <input  type="text" readonly class="cell-name-display">
+        <img class = "fxn-icon" src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-function-mathematics-geometry-flat-icons-inmotus-design.png"/>
+        <input type="text" class="function-input">
+    </div>
+
+    
+    <div class="input-cell-cont">
+        <div class="cells-cont"></div>
+        <div class="top-left-cell"></div>
+        <div class="col-name-cont"></div>
+        <div class="row-name-cont"></div>
+    </div>
+
+    <div class="sheet-cont">
+        <span class="material-symbols-outlined new-sheet-btn">
+            post_add
+        </span>
+
+        <select class="sheet-select">
+            <option value="sheet-1">Sheet 1</option>
+            <option value="sheet-2">Sheet 2</option>
+            <option value="sheet-3">Sheet 3</option>
+            <option value="sheet-4">Sheet 4</option>
+        </select>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./formulaHandler.js"></script>  
+    <script src="./editoptions.js"></script>
+    <script src="./downloadUpload.js"></script>
+</body>     
+
+</html>
